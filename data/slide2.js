@@ -1,1 +1,45 @@
-(function(){var loadHandler=window['sl_{7BA9AE05-9398-45E0-8DF4-BF811D21CED2}'];loadHandler&&loadHandler(1, '<div id="spr0_1f7856d"><div id="spr1_1f7856d" class="kern slide"><img id="img1_1f7856d" src="data/img31.png" width="1280px" height="720px" alt="" style="left:0px;top:0px;"/></div><div id="spr2_1f7856d" class="kern slide"><div id="spr3_1f7856d" style="left:88px;top:-78.001px;"><div style="width:0px;"><span id="txt0_1f7856d" data-width="238.151031" style="left:433.837px;top:-4.313px;">Overlord 1 -4- Layouts</span></div><div style="width:0px;"><span id="txt1_1f7856d" data-width="362.304688" style="left:371.23px;top:24.487px;">Halfling Abyss &gt;&gt;&gt; Halfling Homes</span></div></div><div id="spr4_1f7856d"><img id="img0_1f7856d" src="data/img30.png" width="1279.5" height="720.75" alt="" style="left:0.188px;top:-0.281px;"/></div><div id="svg4_1f7856d" style="left:600.853px;top:21.5px;"><svg width="42" height="79" viewBox="-2.07 -2 42 79"><g fill="none"><g transform="translate(0.596273,0.666667)"><path fill="#ed7d31" d="M0,0 H36.48 L18.24,36.48 L36.48,72.96 H0 L18.24,36.48 L0,0 Z" fill-rule="evenodd"/></g><g transform="translate(0.596273,0.666667)"><path stroke="#64310f" stroke-width="1.333" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" d="M0,0 H36.48 L18.24,36.48 L36.48,72.96 H0 L18.24,36.48 L0,0 Z"/></g></g></svg></div><div id="vd0_1f7856d" style="left:46.413px;top:238.08px;"></div></div></div>', '{"s":[]}');})();
+(function(){
+    var loadHandler = window['sl_{9F5DF771-5A91-4091-8902-433DFC2C00C7}'];
+    loadHandler && loadHandler(1, 
+        '<div id="spr0_1fd3d3c">' +
+            '<div id="spr1_1fd3d3c" class="kern slide">' +
+                '<img id="img1_1fd3d3c" src="data/img31.png" width="1280px" height="720px" alt="" style="left:0px;top:0px;" />' +
+            '</div>' +
+            '<div id="spr2_1fd3d3c" class="kern slide">' +
+                '<div id="spr3_1fd3d3c" style="left:88px;top:-78.001px;">' +
+                    '<div style="width:0px;">' +
+                        '<span id="txt0_1fd3d3c" data-width="238.151031" style="left:433.837px;top:-4.313px;">Overlord 1 -4- Layouts</span>' +
+                    '</div>' +
+                    '<div style="width:0px;">' +
+                        '<span id="txt1_1fd3d3c" data-width="362.304688" style="left:371.23px;top:24.487px;">Halfling Abyss &gt;&gt;&gt; Halfling Homes</span>' +
+                    '</div>' +
+                '</div>' +
+                '<div id="spr4_1fd3d3c">' +
+                    '<img id="img0_1fd3d3c" src="data/img30.png" width="1279.5" height="720.75" alt="" style="left:0.188px;top:-0.281px;" />' +
+                '</div>' +
+                '<div id="svg4_1fd3d3c" style="left:600.853px;top:21.5px;">' +
+                    '<svg width="42" height="79" viewBox="-2.07 -2 42 79">' +
+                        '<g fill="none">' +
+                            '<g transform="translate(0.596273,0.666667)">' +
+                                '<path fill="#ed7d31" d="M0,0 H36.48 L18.24,36.48 L36.48,72.96 H0 L18.24,36.48 L0,0 Z" fill-rule="evenodd"/>' +
+                            '</g>' +
+                            '<g transform="translate(0.596273,0.666667)">' +
+                                '<path stroke="#64310f" stroke-width="1.333" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" d="M0,0 H36.48 L18.24,36.48 L36.48,72.96 H0 L18.24,36.48 L0,0 Z"/>' +
+                            '</g>' +
+                        '</g>' +
+                    '</svg>' +
+                '</div>' +
+                '<div id="vd0_1fd3d3c" style="left:46.413px;top:238.08px;"></div>' +
+            '</div>' +
+        '</div>', '{"s":[]}');
+
+    // Restart the video on page load or when revisiting the slide
+    document.addEventListener('DOMContentLoaded', function() {
+        var videoElement = document.querySelector("#vd0_1fd3d3c video");  // Assuming the video is inside this div
+
+        if (videoElement) {
+            videoElement.currentTime = 0;  // Reset to the start
+            videoElement.play();  // Play the video automatically when revisiting
+        }
+    });
+})();
