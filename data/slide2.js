@@ -29,13 +29,13 @@
                         '</g>' +
                     '</svg>' +
                 '</div>' +
-                '<div id="vd0_1fd3d3c" style="left:46.413px;top:238.08px;"></div>' +
+                '<div id="vd0_1e44767" style="left:46.413px;top:238.08px;"></div>' +
             '</div>' +
         '</div>', '{"s":[]}');
 
     // Restart the video on page load or when revisiting the slide
     document.addEventListener('DOMContentLoaded', function() {
-        var videoElement = document.querySelector("#vd0_1fd3d3c video");  // Assuming the video is inside this div
+        var videoElement = document.querySelector("#vd0_1e44767 video");  // Correct div container for video
 
         if (videoElement) {
             videoElement.currentTime = 0;  // Reset to the start
