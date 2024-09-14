@@ -39,7 +39,11 @@
 
         if (videoElement) {
             videoElement.currentTime = 0;  // Reset to the start
-            videoElement.play();  // Play the video automatically when revisiting
+
+            // Try to play the video and catch any errors
+            videoElement.play().catch(function(error) {
+                console.log("Autoplay was prevented. User interaction might be required.");
+            });
         }
     });
 })();
