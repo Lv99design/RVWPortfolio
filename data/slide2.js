@@ -40,9 +40,11 @@
         if (videoElement) {
             videoElement.currentTime = 0;  // Reset to the start
 
-            // Try to play the video and catch any errors
+            // Try to play the video
             videoElement.play().catch(function(error) {
-                console.log("Autoplay was prevented. User interaction might be required.");
+                // If autoplay is blocked, inform the user and ask for interaction
+                console.log("Autoplay prevented. Click the video to play.");
+                videoElement.setAttribute("controls", "controls");  // Add video controls if autoplay is blocked
             });
         }
     });
